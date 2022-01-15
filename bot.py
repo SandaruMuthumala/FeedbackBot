@@ -19,6 +19,7 @@ async def start(bot, message):
     buttons = [[
                  InlineKeyboardButton(f'{BUTTON_1}', url=f"{LINK_1}"),
                  InlineKeyboardButton(f'{BUTTON_2}', url=f"{LINK_2}")
+         app.answer_callback_query(query_id, text=hi hi, show_alert=True
               ]]
 
     await message.reply_photo(photo=START_IMG,
