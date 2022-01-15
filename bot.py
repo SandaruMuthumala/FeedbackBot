@@ -19,7 +19,14 @@ async def start(bot, message):
     buttons = [[
                  InlineKeyboardButton(f'{BUTTON_1}', url=f"{LINK_1}"),
                  InlineKeyboardButton(f'{BUTTON_2}', url=f"{LINK_2}")
-         app.answer_callback_query(query_id, text=hi hi, show_alert=True
+         import tkinter.messagebox
+def onClick():
+    tkinter.messagebox.showinfo("Title goes here","Message goes here")
+root = tkinter.Tk()
+button = tkinter.Button(root,text = "Click Me", command = onClick)
+button.pack()
+root.mainloop()
+
               ]]
 
     await message.reply_photo(photo=START_IMG,
