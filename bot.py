@@ -14,7 +14,7 @@ Bot = Client(
 
 
 
-@Bot.on_message(filters.command(['start']) & filters.private)
+@Bot.on_message(filters.command(['help']) & filters.private)
 async def start(bot, message):
     buttons = [[
                  InlineKeyboardButton(f'{BUTTON_1}', url=f"{LINK_1}"),
