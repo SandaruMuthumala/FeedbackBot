@@ -23,7 +23,7 @@ async def start(bot, message):
 
               ]]
     markup = ReplyKeyboardMarkup(keyboard=[['Time', KeyboardButton(text='Logo')],["File", "Audio"]])
-    if command == '/start':
+    if command == '/help':
         telegram_bot.sendMessage (chat_id, str("Hi! Which one do you want? choose from the below keyboard buttons."), reply_markup=markup)
         telegram_bot.sendMessage(chat_id, str(now.hour)+str(":")+str(now.minute))
 
